@@ -25,8 +25,9 @@ Organizes files in the downloads directory by classifying them into different fo
    python3 Cleaner\ 2.0/cleaner.py --directory <path_to_directory> --config <path_to_config.json>
    ```
 2. Use additional arguments:
-   - `--dry-run`: Preview changes without moving files.
-   - `--log <path_to_log_file>`: Save logs to a file.
+   - `--dry-run`: Preview changes without moving files (generates preview_changes.txt)
+   - `--log <path_to_log_file>`: Save logs to a file
+   - `--preview`: Alias for --dry-run
 
 ### Configuration
 
@@ -49,10 +50,38 @@ Install `tkinter` on Linux if not already installed:
 sudo apt-get install python3-tk
 ```
 
+## Building from Source
+
+1. Install required packages:
+   ```bash
+   pip install pyinstaller
+   ```
+2. Build executable:
+   ```bash
+   python build.py
+   ```
+3. Find the executable in `dist/DownloadOrganizer.exe`
+
+## Releases
+
+Pre-built Windows executables are available in [GitHub Releases](https://github.com/yourusername/Download-Directory-Organizer/releases).
+
+### Using the Executable
+
+- **GUI Mode**: Double-click `DownloadOrganizer.exe`
+- **Command Line**:
+  ```bash
+  DownloadOrganizer.exe --directory <path> --config <config.json>
+  ```
+  Options:
+  - `--preview`: Generate preview_changes.txt without moving files
+  - `--dry-run`: Same as --preview
+  - `--log <path>`: Save operation logs to file
+
 ## Features
 
 - **UI**: A modern and minimal interface for organizing files.
-- **Preview Changes**: See what files will be moved before making changes.
+- **Preview Changes**: Generates `preview_changes.txt` showing planned moves and creates folders
 - **Save/Load Settings**: Save frequently used configurations for quick access.
 - **Customizable**: Easily modify file types and folders in the `config.json` file.
 - **Error Handling**: Handles file name conflicts and logs errors.
