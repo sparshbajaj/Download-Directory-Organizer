@@ -1,6 +1,19 @@
-# Download Directory Organizer
+# 📂 Directory Organizer
 
-Organizes files in the downloads directory by classifying them into different folders according to their file types. This project is inspired by [DropIt](http://dropit.sourceforge.net/).
+[![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![GitHub release](https://img.shields.io/github/release/sparshbajaj/Download-Directory-Organizer.svg)](https://github.com/sparshbajaj/Download-Directory-Organizer/releases)
+
+A smart file organization tool that automatically categorizes your downloads into configurable folders. Inspired by [DropIt](http://dropit.sourceforge.net/), with modern features and cross-platform support.
+
+✨ **Key Features**:
+- 🖥️ Modern UI with intuitive controls
+- 🔍 Dry-run mode to preview changes
+- ⚙️ Persistent settings and configurations
+- 📁 Customizable file type mappings
+- 🛠️ CLI and GUI modes
+- 📦 Executable builds for Windows
+- 📄 Detailed logging and error handling
 
 ## Getting Started
 
